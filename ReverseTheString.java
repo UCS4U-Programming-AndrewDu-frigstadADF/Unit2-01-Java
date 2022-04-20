@@ -16,6 +16,7 @@ public class ReverseTheString {
     // function to reverse the string
     public static String reverse(String someString) {
 
+        // declaring variable
         String reverseString = "";
 
         // if the string is 0 then do nothing
@@ -40,7 +41,9 @@ public class ReverseTheString {
     
     public static void main(String[] args) throws IOException {
 
-        Path someFile = Path.of("C:\\Users\\andye\\ICS4U\\Unit2-01-Java\\string.txt");
+        // read the file
+        Path someFile = Path.of("C:\\Users\\s278552\\Everything\\Unit2-01\\Unit2-01-Java\\string.txt");
+        // put the file into a string
         String someString = Files.readString(someFile);
 
         // print the original string
