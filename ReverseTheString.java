@@ -6,9 +6,10 @@
 **/
 
 // imports
-import java.lang.*;
 import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class ReverseTheString {
     
@@ -37,9 +38,10 @@ public class ReverseTheString {
 
     }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        String someString = "recursion";
+        Path someFile = Path.of("C:\\Users\\andye\\ICS4U\\Unit2-01-Java\\string.txt");
+        String someString = Files.readString(someFile);
 
         // print the original string
         System.out.println(someString);
